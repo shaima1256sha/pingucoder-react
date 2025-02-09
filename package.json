@@ -4,7 +4,8 @@
   "description": "this is pingu react",
   
   "scripts": {
-  "start": "parcel index.html --open --no-cache",
+  "start":"parcel index.html ",
+  "build":"parcel build index.html",
   "test": "jest"
 },
   "keywords": [
