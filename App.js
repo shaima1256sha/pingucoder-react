@@ -1,61 +1,121 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import data from "./ResData.json";
 
-// const heading = React.createElement(
-//   "h1",
-//   { id: "headings", xyz: "bachboucha" },
-//   "hello from js"
-// );
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(heading);
+/**
+ * Header
+ *    -Logo
+ *    -NavItems
+ *
+ * Body
+ *    -Search
+ *    -RestaurantContainers:
+ *        -Restaurant Cards
+ *            -Img
+ *            -Name of restaurant, Star rating, Cuisine, Delevery time
+ * Footer
+ *    -Copyright
+ *    -Links
+ *    -Adress
+ *    -Contact
+ */
 
-// const parent = React.createElement(
-//   "div",
-//   { id: "parent" },
-//   [
-//     React.createElement("div", { id: "child" }, [
-//       React.createElement("h1", {}, "learn parcel"),
-//       React.createElement("h2", {}, "i am h2 tag"),
-//     ]),
-//   ],
-//   [
-//     React.createElement("div", { id: "child2" }, [
-//       React.createElement("h1", {}, "i am h1 tag"),
-//       React.createElement("h2", {}, "i am h2 tag"),
-//     ]),
-//   ]
-// );
+const Header = () => {
+  return (
+    <div className="header">
+      <div className="logo-Container">
+        <img
+          className="logo"
+          src="https://img.freepik.com/free-vector/burger-cheese-with-fire-cartoon-vector-icon-illustration-food-object-icon-concept-isolated-premium_138676-5539.jpg?w=826&t=st=1695148160~exp=1695148760~hmac=15fbe29d7fb2f694e05ac95449f779d2228e6c1f46233dfd51c55f3bf5db4bdc"
+          alt="logo"
+        />
+      </div>
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact Us</li>
+          <li>Cart</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
 
-// const root = ReactDOM.createRoot(document.getElementById("root"));
+const styleCard = {
+  backgroundColor: "#f0f0f0",
+};
 
-// root.render(parent);
-// console.log(parent);
+// ! Dynamic Data with JSON
 
-// ~ React.createElement => objet => HTML element (render)
+const RestaurantCard = (props) => {
+  const { item } = props;
+  const { name, avgRating, cuisines, areaName, cloudinaryImageId } = item;
+  const imgSrc = `https://glovo.dhmedia.io/image/stores-glovo/stores/${cloudinaryImageId}`;
+  return (
+    <div className="res-card">
+      <img src={imgSrc} alt="res-logo" className="res-logo" />
+      <h3 className="res-name">{name}</h3>
+      <h4 className="res-rating">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+          alt="star"
+          className="res-star"
+        />
+        {avgRating}
+      </h4>
+      <div className="res-items">{cuisines.join(" ,")}</div>
+      <div className="res-location">{areaName}</div>
+    </div>
+  );
+};
+const Body = () => {
+  const resData = data?.resData;
+  return (
+    <div className="body">
+      <div className="res-container">
+        {resData.map((item) => (
+          <RestaurantCard item={item.info} key={item.info.id} />
+        ))}
+      </div>
+    </div>
+  );
+};
 
-// const headingg = React.createElement("h1", { id: "head" }, "pingucoder React");
-// console.log(heading);
+const Footer = () => {
+  return <div className="footer"></div>;
+};
 
-// & JSX it not HTML
-
-// const heading = <h1 id="headh">pingucoder using jsx</h1>;
-
-// ^ React functional component
-const Title = () => <h1 className="titre"> slm ena chaima</h1>;
-
-const number = 1250;
-const element = <span> <br />React element </span>;
-
-const RasTag = () => (
-  <div id="container">
-    {number}
-    {element}
-    <Title />
-    <Title></Title>
-    {Title()}
-    <h1> learn react</h1>
-  </div>
-);
+const AppLayout = () => {
+  return (
+    <div className="app">
+      <Header />
+      <Body />
+      <Footer />
+    </div>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<RasTag />);
+root.render(<AppLayout />);
+
+//~Destructuring
+//~ Array destructuring
+
+// const numbers = [1, 2, 3, 4, 5];
+// const [first, second, third] = numbers;
+// console.log(first, third); //=> 1,3
+
+//& object destructuring
+
+// const person = {
+//   name: "chaima",
+//   age: 21,
+// };
+// const { name } = person;
+// console.log(name);
+
+// ^changement des variables a travers destructuring
+
+// const { name: userName, age: userAge } = person;
+// console.log(userName);

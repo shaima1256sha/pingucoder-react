@@ -1,0 +1,84 @@
+{
+  "resData": [
+    {
+      "info": {
+        "id": "217031",
+        "name": "Baguette & Baguette",
+        "cloudinaryImageId": "871f17d4e19b56395354acc375037d893a452936cbfdc9b2d01b0fed0e39becd?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7Im1vZGUiOiJmaWxsIiwiYmciOiJ0cmFuc3BhcmVudCIsIndpZHRoIjo1ODgsImhlaWdodCI6MzIwfX1d",
+        "areaName": "tunis",
+        "avgRating": 4.5,
+        "cuisines": ["Tunisiana Style Sandwich"]
+      }
+    },
+    {
+      "info": {
+        "id": "209751",
+        "name": "Bombay",
+        "cloudinaryImageId": "b4f6881ea7275be7d73d4b6d6ce104443caf94428905d4913765d5414109d77c?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7Im1vZGUiOiJmaWxsIiwiYmciOiJ0cmFuc3BhcmVudCIsIndpZHRoIjo1ODgsImhlaWdodCI6MzIwfX1d",
+        "areaName": "india",
+        "avgRating": 4.1,
+        "cuisines": ["Indian Sandwich"]
+      }
+    },
+    {
+      "info": {
+        "id": "309751",
+        "name": "DI Napoli",
+        "cloudinaryImageId": "9fa615fe21f6cf180e1e751c34f6f12bf0ab48a8e9eb64179df6d93c46c4bd1c?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7Im1vZGUiOiJmaWxsIiwiYmciOiJ0cmFuc3BhcmVudCIsIndpZHRoIjo1ODgsImhlaWdodCI6MzIwfX1d",
+        "areaName": "Italian",
+        "avgRating": 4.4,
+        "cuisines": ["Italian food"]
+      }
+    },
+    {
+      "info": {
+        "id": "217131",
+        "name": "Tacos Chaneb",
+        "cloudinaryImageId": "77c340a666510ab51340d62837d52017a36ab0f448806ac6955cdc48ee9ca8d1",
+        "areaName": "Tunis",
+        "avgRating": 4.5,
+        "cuisines": ["Tunisian-style tacos"]
+      }
+    },
+    {
+      "info": {
+        "id": "229751",
+        "name": "Mlewi Eljanoub",
+        "cloudinaryImageId": "67a82263e6235eb0ea815cc47079460abbdc812bd3b2d1853a513cc3d92c7137",
+        "areaName": "Sousse",
+        "avgRating": 4.1,
+        "cuisines": ["Southern Tunisian Specialties"]
+      }
+    },
+    {
+      "info": {
+        "id": "310829",
+        "name": "Dar Slah",
+        "cloudinaryImageId": "9cbd1d9215253889c9b2788fb1a27d0e3fe1f514918158127d766171d8d01929",
+        "areaName": "Sidi Bou Said",
+        "avgRating": 3.7,
+        "cuisines": ["Couscous", "Tunisian Traditional"]
+      }
+    },
+    {
+      "info": {
+        "id": "636843",
+        "name": "La Goulette Grill",
+        "cloudinaryImageId": "2cdc9ad54e0c216599d28ba0d38e85cebcce8a346f628c6419762a4898fa88ff",
+        "areaName": "La Goulette",
+        "avgRating": 3.3,
+        "cuisines": ["Grilled Fish", "Octopus Salad"]
+      }
+    },
+    {
+      "info": {
+        "id": "303893",
+        "name": "Le Coin Jardins d'el Menzah",
+        "cloudinaryImageId": "9266d6edde8487e599010b3bd28a033e947eabdd37402178327654d34ec3ca74",
+        "areaName": "Menzah",
+        "avgRating": 3.7,
+        "cuisines": ["Grilled Prawns", "Tunisian Shawarma"]
+      }
+    }
+  ]
+}

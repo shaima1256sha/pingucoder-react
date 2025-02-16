@@ -18,3 +18,5 @@
 - support HTTPS
 - Tree shaking ( remove unused code "dist")
 - Different between dev and prod bundling (prod take more time)
+
+<!-- ResData.json est un fichier est pour stocker et echanger des données en format json -->
